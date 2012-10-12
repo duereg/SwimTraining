@@ -1,17 +1,28 @@
 {
-  "name":    "facebook-template-node",
+  "name": "workouts",
+  "description": "A swim workout tracking tool",
   "version": "0.0.1",
-
-  "description": "Template app for Heroku / Facebook integration, Node.js language",
-
-  "dependencies": {
-    "async":     "0.1.18",
-    "ejs":       "0.4.3",
-    "express":   "2.4.6",
-    "faceplate": "0.0.4"
+  "homepage": "http://codetype.wordpress.com/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/duereg/workouts.git"
   },
-
+  "main": "./server.js",
+  "dependencies": {
+    "derby": "*", 
+    "derby-ui-boot": "git://github.com/duereg/derby-ui-boot.git",
+    "express": "3.0.0beta4",
+    "gzippo": ">=0.1.7",
+    "racer-db-mongo": "*",
+    "underscore": "*",
+    "everyauth": "*"
+  },
+  "scripts": {
+    "start": "server.js"
+  },
   "engines": {
-    "node": "0.6.x"
-  }
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  },
+  "private": true
 }

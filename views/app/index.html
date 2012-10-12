@@ -1,0 +1,37 @@
+<import: src="home">
+<import: src="start">
+<import: src="login">
+<import: src="register">
+<import: src="swimAdd"> 
+
+<Title:>
+  Swim Training
+
+<Header:>
+  <!-- This is a component defined in the /ui directory -->
+  <ui:connectionAlert>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/">Swim Training</a>
+        <div >
+          <ul class="nav">
+            {{#each pages}}
+              <li class="{{#if equal(url, activeUrl)}}active{{/}}">
+                <a href="{{url}}">{{title}}</a>
+              </li>
+            {{/}}
+          </ul>
+        </div>
+        <div class="pull-right">
+          <ul class="nav"> 
+              <li class="{{#if equal('/login', activeUrl)}}active{{/}}">
+                <a href="/login">Login</a>
+              </li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ 

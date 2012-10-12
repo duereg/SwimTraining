@@ -1,0 +1,10 @@
+<input:>
+{{{#with data}}}
+  <div class="control-group {.cssClass}">
+    <label class="control-label" {#if .id}for="{.id}"{/}>{.label}</label>
+    <div class="controls">
+      <input type="{.type}" value="{.value}" {#if .id}id="{.id}"{/} />
+      <span class="help-inline">{.message}</span>
+    </div>
+  </div> 
+{{{/}}}
