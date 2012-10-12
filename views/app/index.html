@@ -7,7 +7,11 @@
 <Title:>
   Swim Training
 
+<Head:>
+  <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+
 <Header:>
+  <h2 style="display: none;">Swim Training Software</h2>
   <!-- This is a component defined in the /ui directory -->
   <ui:connectionAlert>
 
@@ -25,11 +29,23 @@
           </ul>
         </div>
         <div class="pull-right">
-          <ul class="nav"> 
-              <li class="{{#if equal('/login', activeUrl)}}active{{/}}">
-                <a href="/login">Login</a>
-              </li> 
-          </ul>
+          {#unless _facebookAuthenticated}
+            <a href="/auth/facebook">
+              <img src="/img/facebook-login-register.jpeg" alt="Login / Register With Facebook"/>
+            </a>
+          {else}
+            <div class="btn-group">
+              <button class="btn btn-small">{_user.auth.facebook.name}</button>
+              <button class="btn btn-small dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span> 
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#settings-modal" data-toggle="modal">Settings</a></li>
+                <!-- FIXME href='/logout' isn't redirecting the page.. window.history? onclick="window.location='/logout'"-->
+                <li><a href="/logout">Logout</a></li>
+              </ul>
+            </div> 
+          {/}
         </div>
       </div>
     </div>

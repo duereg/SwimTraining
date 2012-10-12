@@ -15,7 +15,8 @@
     "gzippo": ">=0.1.7",
     "racer-db-mongo": "*",
     "underscore": "*",
-    "everyauth": "*"
+    "everyauth": "*",
+    "guid": "*"
   },
   "scripts": {
     "start": "server.js"
