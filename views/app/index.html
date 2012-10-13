@@ -25,17 +25,17 @@
         </div>
         <div class="pull-right">
           <ul class="nav">
-          {#unless _facebookAuthenticated}
+          {{#unless _facebookAuthenticated}}
             <li>
               <a href="/auth/facebook">
                 <img src="/img/facebook-login-register.jpeg" 
                      alt="Login / Register With Facebook"/>
               </a>
             </li>
-          {else}
-            <li>{_user.auth.facebook.name}</li>
+          {{else}}
+            <li><a href="/user/{{_userId}}">{{_facebookAuthenticated.name}}</a></li>
             <li><a href="/logout">Logout</a></li>  
-          {/}
+          {{/}}
           </ul>
         </div>
       </div>
