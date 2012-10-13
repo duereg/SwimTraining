@@ -5,7 +5,7 @@
   "homepage": "http://codetype.wordpress.com/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/duereg/workouts.git"
+    "url": "git@heroku.com:swim-training.git"
   },
   "main": "./server.js",
   "dependencies": {
