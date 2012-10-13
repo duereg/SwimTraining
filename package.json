@@ -12,7 +12,7 @@
     "derby": "*", 
     "derby-ui-boot": "git://github.com/duereg/derby-ui-boot.git",
     "express": "3.0.0beta4",
-    "gzippo": ">=0.1.7",
+    "gzippo": "git://github.com/dbashford/gzippo.git",
     "racer-db-mongo": "*",
     "underscore": "*",
     "everyauth": "*",
