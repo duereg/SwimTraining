@@ -9,9 +9,19 @@
       </div>
       <div class="row-fluid">
         <div class="span12">
-          Swims are in the format:<br/>
-          NUM_INTERVALS X DISTANCE TYPE @ TIME<br/>
-          ex: 4 x 100 HUHO @ 1:30
+          <div class="directions">
+            <div>Swims are in the format:</div>
+            <div>NUM_INTERVALS X DISTANCE TYPE @ TIME</div>
+            <div>ex: 4 x 100 HUHO @ 1:30</div>
+          </div>
+        </div>
+        <div class="span12">
+          <div class="control-group">
+            <label class="control-label" for="publishDate">publishDate</label>
+            <div class="controls">
+              <input type="date" id="publishDate" name="publishDate" placeholder="Date To Publish">
+            </div>
+          </div> 
         </div>
         <div class="span12">
           <textarea id="txtSwim" style="width: 700px; height: 250px;">
@@ -19,7 +29,7 @@
           </textarea>
         </div> 
         <div class="span12">
-            {swims.new.translated}
+          <!--  {swims.new.translated} -->
         </div>
       </div>
       <div class="row-fluid">
