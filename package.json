@@ -1,7 +1,7 @@
 {
   "name": "workouts",
   "description": "A swim workout tracking tool",
-  "version": "0.0.1",
+  "version": "0.0.1-1",
   "homepage": "http://codetype.wordpress.com/",
   "repository": {
     "type": "git",
@@ -9,7 +9,7 @@
   },
   "main": "./server.js",
   "dependencies": {
-    "derby": "*", 
+    "derby": "*",
     "derby-ui-boot": "git://github.com/duereg/derby-ui-boot.git",
     "express": "3.0.0beta4",
     "gzippo": "git://github.com/dbashford/gzippo.git",
@@ -23,7 +23,8 @@
   },
   "engines": {
     "node": "0.8.x",
-    "npm":  "1.1.x"
+    "npm": "1.1.x"
   },
-  "private": true
+  "private": true,
+  "subdomain": "h2o.training"
 }
