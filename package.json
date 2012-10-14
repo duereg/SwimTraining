@@ -1,11 +1,11 @@
 {
   "name": "workouts",
   "description": "A swim workout tracking tool",
-  "version": "0.0.1-2",
+  "version": "0.0.1-3",
   "homepage": "http://codetype.wordpress.com/",
   "repository": {
     "type": "git",
-    "url": "git@heroku.com:swim-training.git"
+    "url": "duereg@bitbucket.org/duereg/swimtraining.git"
   },
   "main": "./server.js",
   "dependencies": {
