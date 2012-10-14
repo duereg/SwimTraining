@@ -4,14 +4,17 @@
       <section id="secUser">
       {{#with _user}}
         <div class="row-fluid">
-          <div class="span6">
+          <div class="span12">
             <legend>{{.name}}</legend>
-          </div>
-          <div class="span6">
-            {{.link}}
           </div>
         </div>
         <div class="row-fluid"> 
+          <div class="span6">
+            {{.link}}
+          </div>
+          <div class="span6">
+            {{.email}}
+          </div>
           <!-- TODO: Add swims user has completed here -->
         </div> 
       {{/}}

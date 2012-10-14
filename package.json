@@ -9,14 +9,14 @@
   },
   "main": "./server.js",
   "dependencies": {
-    "derby": "*",
+    "derby": "0.3.13",
     "derby-ui-boot": "git://github.com/duereg/derby-ui-boot.git",
     "express": "3.0.0beta4",
     "gzippo": "git://github.com/dbashford/gzippo.git",
-    "racer-db-mongo": "*",
-    "underscore": "*",
-    "everyauth": "*",
-    "guid": "*"
+    "racer-db-mongo": "0.3.13",
+    "underscore": "1.4.2",
+    "everyauth": "0.3.0",
+    "guid": "0.0.10"
   },
   "scripts": {
     "start": "server.js"

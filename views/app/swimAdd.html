@@ -12,7 +12,7 @@
           <div class="control-group">
             <label class="control-label" for="publishDate">Date to Publish</label>
             <div class="controls">
-              <input type="date" id="publishDate" name="publishDate" placeholder="Date To Publish">
+              <input type="date" id="publishDate" name="publishDate" placeholder="Date To Publish" required>
             </div>
           </div> 
         </div>
@@ -23,11 +23,9 @@
             <div>ex: 4 x 100 HUHO @ 1:30</div>
           </blockquote>
         </div>
-        <div class="span12">
-          <textarea id="txtSwim" style="width: 700px; height: 250px;">
-            {swims.new.text}
-          </textarea>
-        </div> 
+        <textarea id="txtSwim" class="span12" rows="16">
+          {swims.new.text}
+        </textarea>
         <div class="span12">
           <!--  {swims.new.translated} -->
         </div>
