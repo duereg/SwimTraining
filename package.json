@@ -1,7 +1,7 @@
 {
   "name": "workouts",
   "description": "A swim workout tracking tool",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "homepage": "http://codetype.wordpress.com/",
   "repository": {
     "type": "git",
