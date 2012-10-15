@@ -1,0 +1,180 @@
+@color: #FFFFFF;
+@backColor: #000000;
+@borderColor: #999999;
+@fontFamily: "Lucida Grande", Lucida Sans Unicode, Tahoma, Arial;
+@arrows: url(/img/timeline/arrows.png);
+@normal: url(/img/timeline/normal.gif);
+@today: url(/img/timeline/today.gif);
+@bubblePng: url(/img/timeline/bubble.png);
+@bubbleGif: url(/img/timeline/bubble.gif);
+
+.timeline {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    color: @color;
+    font-family: @fontFamily; 
+
+    li {
+        line-height: normal;
+    }
+}
+
+.timeline_arrows {
+    overflow: hidden;
+    padding-left: 2px; 
+    padding-bottom: 10px;
+    zoom: 1;
+
+    div {
+        float: left;
+    }
+}
+ 
+.timeline_date {
+    height: 20px;
+    color: @color;
+    background-color: @backColor;
+    padding: 0px 15px 0px 15px;
+    line-height: 1.6em;
+}
+
+.timeline_lastyear,
+.timeline_lastmonth,
+.timeline_nextmonth,
+.timeline_nextyear {
+    cursor: pointer;
+    width: 15px;
+    height: 20px;
+    background: @arrows no-repeat;
+}
+
+.timeline_lastyear {
+    border-right: 1px solid @backColor;
+    &:hover {
+        background-position: 0px -20px;
+    }
+}
+ 
+
+.timeline_lastmonth,
+.timeline_nextmonth {
+    background-position: -15px 0px;
+    &:hover {
+        background-position: -15px -20px;
+    }
+}
+ 
+.timeline_nextyear {
+    background-position: -30px 0px;
+    border-left: 1px solid @backColor;
+    &:hover {
+        background-position: -30px -20px;
+    }
+}
+ 
+.timeline_top, .timeline_bottom  {
+    overflow : hidden;
+    display: block;
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    li {
+        float: left;
+        margin-right: 2px;
+        padding: 3px 2px 0px 2px;
+        border-bottom: 1px solid @color;
+
+        div {
+            text-transform: uppercase;
+            text-align: center;
+            width: 20px;
+        }
+    }
+    .event {
+        color: #C1E20D;
+        cursor: pointer;
+    }
+}
+   
+.timeline_bottom {
+    li {
+        border: none;
+        padding: 0px 2px 3px 2px !important;
+    }
+    div {
+        background: @normal no-repeat left bottom;
+        padding: 5px 0px 3px 0px !important;
+    }
+    .today {
+        background: @today no-repeat left bottom;
+        padding: 5px 0px 3px 0px !important;
+    }
+}
+ 
+.timeline_top {
+    div {
+        background: @normal no-repeat left top;
+        padding: 3px 0px 5px 0px !important;
+    } 
+    .today {
+        background: @today no-repeat left top;
+        padding: 3px 0px 5px 0px !important;
+    } 
+}
+   
+.timeline_bubble {
+    display: none;   
+    overflow: hidden;
+    width: 142px; 
+    position: absolute; 
+    font-family: @fontFamily; 
+
+    .bubble_top, .bubble_bottom, .bubble_mid {
+        background: @bubblePng repeat-y;
+        overflow: hidden;
+    }
+    .bubble_top{
+        height: 10px;
+        background-position: -142px 0px;
+    }
+    .bubble_bottom{
+        height: 10px;
+        background-position: -142px -38px;
+    }
+    .bubble_mid {
+        background-position: -284px -1px;
+        overflow: hidden;
+    }
+    .event_data {
+        overflow: hidden;
+        display: none;
+        color: @color;
+        font-weight: normal;
+        margin: 3px 0px 0px 0px;
+    }
+    .event_title {
+        cursor: pointer;
+        color: @color;
+        padding: 3px 0px 3px 0px;
+        margin: 0px 5px 0px 5px;
+        border-bottom: 1px solid @borderColor;
+        font-weight: bold;
+
+        &:hover {
+            color: #C1E20D;
+        }
+
+        &:hover + next{
+            display: block;
+        }
+    }
+}
+ 
+.bubbleIE6 {
+    background-image: @bubbleGif !important;
+}
+      

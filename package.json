@@ -16,7 +16,7 @@
     "racer-db-mongo": "0.3.13",
     "underscore": "1.4.2",
     "everyauth": "0.3.0",
-    "guid": "0.0.10"
+    "guid": "0.0.10" 
   },
   "scripts": {
     "start": "server.js"
