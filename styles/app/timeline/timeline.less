@@ -1,5 +1,3 @@
-@import "timeline-dark";
-
 .timeline {
     padding: 0px;
     margin: 0px;
@@ -89,7 +87,7 @@
         }
     }
     .event {
-        color: #C1E20D;
+        color: @hightlightColor;
         cursor: pointer;
     }
 }
@@ -159,7 +157,7 @@
         font-weight: bold;
 
         &:hover {
-            color: #C1E20D;
+            color: @highlightColor;
         }
 
         &:hover + next{
